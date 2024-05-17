@@ -1,0 +1,56 @@
+:root{
+    --text: #ffffff;
+    --background: #09032e;
+    --darkBackground: #07031e;
+    --primary: #e2371d;
+    --darkPrimary: #fd3e3e;
+    --secondary: #fd7d2d;
+    --accent: #621c1c;
+}
+
+body{
+    color: var(--text);
+    background-color: var(--background);
+
+    font-family: alata;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    width: 100%;
+
+}
+
+.list > .listItem.primary{
+    flex: 1;
+
+    border-radius: 5px;
+    background-color: var(--accent);
+
+    padding: 10px;
+
+    font-size: 24px;
+
+    margin: 4px;
+}
+
+.list > .listItem.primary > .listItem.secondary{
+    flex: 1;
+
+    border-radius: 5px;
+    background-color: var(--darkPrimary);
+
+    padding: 10px;
+
+    font-size: 18px;
+
+    margin: 4px;
+}
+
+a {
+    color: var(--text);
+}
